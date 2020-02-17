@@ -2,10 +2,12 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 }
 body {
   font-family: garamond, serif;
-  margin: 20px;
+  margin: 40px 0px;
+  padding: 0px 20px;
+  background-color: white;
 }
 
-}
+
 section.dramatis, section.play {
   width: 70%;
   max-width: 750px;
@@ -22,8 +24,17 @@ font-size: 2em;
 font-family: impact, verdana, sans-serif;
 background-color: black;
 color: white;
-padding: 0.5px 0;
+padding: 16px 0;
 }
+
+/* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
+h1 a, h2 a {
+  margin-top: -2.4rem;
+  padding-bottom: 2.4rem;
+  display:block;
+  background: white;
+}
+
 p.character {
   font-size: 1.1em;
   color: rgb(153, 5, 5);
@@ -63,14 +74,6 @@ span.character_role {
   color: rgb(153, 5, 5);
 }
 
-@media only screen and (min-width: 600px) {
-  body {
-    font-size: 105%;
-  }
-}
-
-
-
 
 a {
   text-decoration: none;
@@ -85,7 +88,7 @@ ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
-    font-family: impact;
+    font-family: sans-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -110,6 +113,7 @@ li a {
 
 li:hover {
     background: rgb(149, 10, 10);
+    color: red;
     cursor: pointer;
 }
 
@@ -135,4 +139,178 @@ ul li ul:hover {
 ul li ul li {
     clear: both;
   width: 100%;
+}
+p.playtitle {
+  position:fixed;
+  left:0;
+  top:0;
+  /* height:1rem; */
+  padding: .6rem;
+  color:white;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  z-index: 20;
+  margin:0;
+}
+
+a.menu {
+  position:fixed;
+  top:0;
+  right:0;
+  color:white;
+  padding: .6rem;
+  color:white;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  z-index: 20;
+  margin:0;
+}
+
+a.menu:hover {
+  color:red;
+  cursor:pointer;
+}
+.contents {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background: black;
+  font-family: verdana, sans-serif;
+  font-size:.8em;
+  height:2.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    font-size: 1em;
+    margin: 0;
+    padding-left: 0;
+    float:right;
+    overflow: hidden;
+    background:black;
+    width:0;
+    position:relative;
+    top: 2rem;
+
+}
+
+#navigation:target {
+  width: 30%;
+}
+
+li {
+    color: #fff;
+    display: block;
+    padding: .3rem .5rem;
+    position: relative;
+    text-decoration: none;
+    min-width: 1rem;
+}
+
+
+
+
+li a {
+  color: #fff;
+}
+
+li:hover a {
+    cursor: pointer;
+    color: red;
+}
+
+
+
+ul li ul {
+  display:block;
+  width:100%;
+  padding:0;
+  left: 0;
+  font-size: .7em;
+  /* display: none; */
+  float:none;
+  margin:0;
+  position:static;
+}
+
+ul li ul li {
+min-width:4rem;
+}
+
+ul li:hover > ul, ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+/* now follows the media query that displays everyhing correctly on wider screens */
+
+@media only screen and (min-width: 780px) {
+
+h1.act, h1.dramatishead {
+  font-size: 200%;
+}
+
+ul {
+  width:auto;
+  float:right;
+  overflow:visible;
+  position:static;
+  top:inherit;
+
+}
+
+
+li {
+  display:inline-block;
+  height:1.2rem;
+  padding: .6rem .4rem;
+}
+
+a.menu {
+  display:none;
+}
+
+ul li ul {
+  background: rgb(120, 120, 120);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  margin: .8rem 0;
+  padding:0;
+  left: 0;
+  float:right;
+}
+
+li:hover {
+    background: rgb(120, 120, 120);
+    cursor: pointer;
+}
+
+ul li ul li:hover {
+background: rgb(96, 99, 89);
+}
+
+li:hover a {
+  color:white;
+}
+
+#navigation:target {
+  width: auto;
+}
+
+p.prose, p.verseline {
+margin: 0 12px 0 60px;
+}
+
+p.prose {
+  margin-bottom: 12px;
+}
+
 }
