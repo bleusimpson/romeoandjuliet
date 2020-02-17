@@ -1,0 +1,138 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+}
+body {
+  font-family: garamond, serif;
+  margin: 20px;
+}
+
+}
+section.dramatis, section.play {
+  width: 70%;
+  max-width: 750px;
+  margin: 10px auto;
+}
+section.dramatis {
+  margin:
+}
+div.sceneImage {
+}
+h1.act, h1.dramatishead{
+text-align: center;
+font-size: 2em;
+font-family: impact, verdana, sans-serif;
+background-color: black;
+color: white;
+padding: 0.5px 0;
+}
+p.character {
+  font-size: 1.1em;
+  color: rgb(153, 5, 5);
+
+}
+p.charactername {
+margin: 0 10px 0 40px;
+
+
+}
+h1.dramatishead {
+
+}
+h2.firstscene, h2.scene {
+text-align: center;
+font-family: impact;
+}
+h2.location, p.play_location {
+font-family: impact;
+color: rgb(149, 10, 10);
+}
+
+p.prose {
+margin: 0 12px 0 60px;
+}
+
+p.song {
+text-align: center;
+}
+h2.stagedirection, span.stage_directions_inline, .EnterExit {
+font-weight: bold;
+}
+p.verseline {
+margin: 0 12px 0 60px;
+}
+span.character_role {
+  color: rgb(153, 5, 5);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 105%;
+  }
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+nav {
+    font-family: impact;
+}
+
+ul {
+  background: black;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-family: impact;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+li {
+    color: #fff;
+  background: black;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+    background: rgb(149, 10, 10);
+    cursor: pointer;
+}
+
+ul li ul {
+    background: black;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}
