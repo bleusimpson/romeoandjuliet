@@ -6,7 +6,9 @@ body {
   padding: 0px 20px;
   background-color: white;
 }
-
+.playtitle a{
+  color: white;
+}
 
 section.dramatis, section.play {
   width: 70%;
@@ -112,15 +114,13 @@ li a {
 }
 
 li:hover {
-    background: rgb(149, 10, 10);
-    color: red;
+    background: black;
+    color: white;
     cursor: pointer;
 }
 
 ul li ul {
     background: black;
-    visibility: hidden;
-  opacity: 0;
   min-width: 5rem;
     position: absolute;
   transition: all 0.5s ease;
@@ -148,7 +148,7 @@ p.playtitle {
   padding: .6rem;
   color:white;
   font-family: verdana, sans-serif;
-  font-size:.8em;
+  font-size:.9em;
   z-index: 20;
   margin:0;
 }
@@ -167,7 +167,7 @@ a.menu {
 }
 
 a.menu:hover {
-  color:red;
+  color:rgb(149, 10, 10);
   cursor:pointer;
 }
 .contents {
@@ -221,7 +221,7 @@ li a {
 
 li:hover a {
     cursor: pointer;
-    color: red;
+    color: white;
 }
 
 
@@ -240,6 +240,10 @@ ul li ul {
 
 ul li ul li {
 min-width:4rem;
+}
+
+ul li ul li:hover {
+background-color: rgb(149, 10, 10);
 }
 
 ul li:hover > ul, ul li ul:hover {
@@ -278,7 +282,6 @@ a.menu {
 }
 
 ul li ul {
-  background: rgb(120, 120, 120);
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -289,16 +292,16 @@ ul li ul {
 }
 
 li:hover {
-    background: rgb(120, 120, 120);
+    background-color: rgb(149, 10, 10);
     cursor: pointer;
 }
 
 ul li ul li:hover {
-background: rgb(96, 99, 89);
+background-color: : rgb(149, 10, 10);
 }
 
 li:hover a {
-  color:white;
+  color: white;
 }
 
 #navigation:target {
