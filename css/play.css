@@ -22,11 +22,13 @@ div.sceneImage {
 }
 h1.act, h1.dramatishead{
 text-align: center;
-font-size: 2em;
+font-size: 1.5em;
 font-family: impact, verdana, sans-serif;
 background-color: black;
 color: white;
-padding: 16px 0;
+padding: 1em 0 16px 0;
+vertical-align: middle;
+height: 1em;
 }
 
 /* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
@@ -258,7 +260,7 @@ ul li:hover > ul, ul li ul:hover {
 @media only screen and (min-width: 780px) {
 
 h1.act, h1.dramatishead {
-  font-size: 200%;
+  font-size: 3em;
 }
 
 ul {
