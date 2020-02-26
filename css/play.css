@@ -15,9 +15,7 @@ section.dramatis, section.play {
   max-width: 750px;
   margin: 10px auto;
 }
-section.dramatis {
-  margin:
-}
+
 div.sceneImage {
 }
 h1.act, h1.dramatishead{
@@ -299,7 +297,7 @@ li:hover {
 }
 
 ul li ul li:hover {
-background-color: : rgb(149, 10, 10);
+background-color: rgb(149, 10, 10);
 }
 
 li:hover a {
