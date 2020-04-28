@@ -5,6 +5,8 @@ body {
   margin: 40px 0px;
   padding: 0px 20px;
   background-color: white;
+
+
 }
 .playtitle a{
   color: white;
@@ -28,7 +30,20 @@ padding: 1em 0 16px 0;
 vertical-align: middle;
 height: 1em;
 }
+img.orchard {
+  width:60%;
+  height:50%;
+display:block;
+margin:12px auto;
 
+}
+
+img.street {
+  width:50%;
+  height:100%;
+display:block;
+
+}
 /* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
 h1 a, h2 a {
   margin-top: -3rem;
@@ -38,7 +53,7 @@ h1 a, h2 a {
 }
 
 p.character {
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: rgb(153, 5, 5);
 
 }
@@ -61,16 +76,22 @@ color: rgb(149, 10, 10);
 
 p.prose {
 margin: 0 12px 0 60px;
+font-size: 1.2em;
 }
 
 p.song {
 text-align: center;
 }
-h2.stagedirection, span.stage_directions_inline, .EnterExit {
+h2.stagedirection, .EnterExit {
 font-weight: bold;
+font-size: 1.4em;
+}
+span.stage_directions_inline {
+  font-size: 1.1em;
 }
 p.verseline {
 margin: 0 12px 0 60px;
+font-size: 1.2em;
 }
 span.character_role {
   color: rgb(153, 5, 5);
@@ -321,4 +342,6 @@ p.prose {
 img {
     max-width:100%;
     height:auto;
+    display:block;
+    margin:12px auto;
 }
