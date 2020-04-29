@@ -1,7 +1,7 @@
 body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
 }
 body {
-  font-family: garamond, serif;
+  font-family: sans-serif, verdana;
   margin: 40px 0px;
   padding: 0px 20px;
   background-color: white;
@@ -44,6 +44,28 @@ img.street {
 display:block;
 
 }
+.video-box {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 12px;
+
+}
+
+.video-box iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+}
+
 /* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
 h1 a, h2 a {
   margin-top: -3rem;
@@ -69,7 +91,7 @@ h2.firstscene, h2.scene {
 text-align: center;
 font-family: impact;
 }
-h2.location, p.play_location {
+h2.location, p.play_location, h2.video {
 font-family: impact;
 color: rgb(149, 10, 10);
 }
