@@ -44,27 +44,11 @@ img.street {
 display:block;
 
 }
-.video-box {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-	margin-bottom: 12px;
-
-}
-
-.video-box iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 
 
-}
+
+
 
 /* This extra style rule here makes sure that the linked location is not hidden inder the fixed header */
 h1 a, h2 a {
@@ -325,7 +309,7 @@ a.menu {
 }
 
 ul li ul {
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   position: absolute;
   margin: .8rem 0;
@@ -359,6 +343,18 @@ p.prose {
   margin-bottom: 12px;
 }
 
+h1.act, h1.dramatishead{
+text-align: center;
+font-size: 1.5em;
+font-family: impact, verdana, sans-serif;
+background-color: black;
+color: white;
+padding: 1em 0 16px 0px;
+vertical-align: middle;
+height: 1em;
+
+
+}
 }
 
 img {
@@ -366,4 +362,22 @@ img {
     height:auto;
     display:block;
     margin:12px auto;
+}
+
+.video-box {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 12px;
+
+}
+
+.video-box iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
